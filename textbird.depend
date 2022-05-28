@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1653342224 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
+	"curses.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"textRaster.h"
+
+1642212666 d:\creajeu\cursesprojets\pdcurses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+	<stdbool.h>
+
+1653129928 d:\creajeu\cursesprojets\textraster\textraster.h
+	"LineDrawer.h"
+
+1653152800 d:\creajeu\cursesprojets\textraster\linedrawer.h
+
