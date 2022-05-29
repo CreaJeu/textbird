@@ -33,10 +33,22 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Trap.h" />
+		<Unit filename="TrapView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="TrapView.h" />
+		<Unit filename="allControllers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="allControllers.h" />
 		<Unit filename="allModels.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="allModels.h" />
+		<Unit filename="allViews.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="allViews.h" />
 		<Unit filename="main_textbird.c">
 			<Option compilerVar="CC" />
 		</Unit>

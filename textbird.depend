@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1653829572 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
-	"curses.h"
+1653833598 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
 	<stdlib.h>
-	<time.h>
+	"curses.h"
 	"textRaster.h"
 	"allModels.h"
+	"allViews.h"
 
 1642212666 d:\creajeu\cursesprojets\pdcurses\curses.h
 	<stdarg.h>
@@ -18,14 +18,14 @@
 
 1653748082 d:\creajeu\cursesprojets\textraster\linedrawer.h
 
-1653830756 source:d:\creajeu\cursesprojets\textbird\allmodels.c
+1653835140 source:d:\creajeu\cursesprojets\textbird\allmodels.c
 	<stdlib.h>
 	<time.h>
 	"allModels.h"
 	"Clock.h"
 	"Trap.h"
 
-1653759722 d:\creajeu\cursesprojets\textbird\allmodels.h
+1653834600 d:\creajeu\cursesprojets\textbird\allmodels.h
 	"Clock.h"
 	"Trap.h"
 
@@ -35,11 +35,37 @@
 1653748364 source:d:\creajeu\cursesprojets\textbird\clock.c
 	"Clock.h"
 
-1653831176 d:\creajeu\cursesprojets\textbird\trap.h
+1653832488 d:\creajeu\cursesprojets\textbird\trap.h
 
-1653831140 source:d:\creajeu\cursesprojets\textbird\trap.c
+1653832512 source:d:\creajeu\cursesprojets\textbird\trap.c
 	<stdlib.h>
 	<math.h>
 	"Trap.h"
 	"Clock.h"
+
+1653835214 source:d:\creajeu\cursesprojets\textbird\allviews.c
+	"allViews.h"
+	"allModels.h"
+	"TrapView.h"
+
+1653832658 d:\creajeu\cursesprojets\textbird\allviews.h
+	"Clock.h"
+	"Trap.h"
+
+1653833644 source:d:\creajeu\cursesprojets\textbird\trapview.c
+	"curses.h"
+	"allModels.h"
+	"TrapView.h"
+	"Trap.h"
+
+1653833804 d:\creajeu\cursesprojets\textbird\trapview.h
+	"textRaster.h"
+
+1653835162 source:d:\creajeu\cursesprojets\textbird\allcontrollers.c
+	<stdlib.h>
+	"curses.h"
+	"allControllers.h"
+	"allModels.h"
+
+1653835194 d:\creajeu\cursesprojets\textbird\allcontrollers.h
 

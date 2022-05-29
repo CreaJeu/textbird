@@ -28,10 +28,10 @@ void trapStaticInit()
 void __trapStart(struct Trap* t, float x)
 {
 	float maxRadius = 10;
-	t->_centerY = range(2, TRAPS_MAX_Y - maxRadius - 2);
+	t->_centerY = range(1, TRAPS_MAX_Y - maxRadius - 1);
 	t->_centerX = x;
 	t->__radius = range(4, maxRadius);
-	t->__rotSpeed = range(.0002, .003);
+	t->__rotSpeed = range(.0002, .002);
 
 	float angle = range(0, 6.3);
 	t->__cosBefore = cosf(angle);

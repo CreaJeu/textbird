@@ -10,6 +10,7 @@
 void allModelsStart()
 {
 	srand(time(00));
+	s_allModelsPlaying = 1;
 	clockStart(&s_clock);
 	trapStaticInit();
 	trapsStart(30);
@@ -17,6 +18,10 @@ void allModelsStart()
 
 void allModelsUpdate()
 {
+	if(s_allModelsSkip)
+	{
+		return;
+	}
 	clockUpdate(&(s_clock));
 	trapsUpdate();
 }
