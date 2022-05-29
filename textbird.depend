@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1653342224 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
+1653829572 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
 	"curses.h"
 	<stdlib.h>
 	<time.h>
-	<math.h>
 	"textRaster.h"
+	"allModels.h"
 
 1642212666 d:\creajeu\cursesprojets\pdcurses\curses.h
 	<stdarg.h>
@@ -13,8 +13,33 @@
 	<wchar.h>
 	<stdbool.h>
 
-1653129928 d:\creajeu\cursesprojets\textraster\textraster.h
+1653730720 d:\creajeu\cursesprojets\textraster\textraster.h
 	"LineDrawer.h"
 
-1653152800 d:\creajeu\cursesprojets\textraster\linedrawer.h
+1653748082 d:\creajeu\cursesprojets\textraster\linedrawer.h
+
+1653830756 source:d:\creajeu\cursesprojets\textbird\allmodels.c
+	<stdlib.h>
+	<time.h>
+	"allModels.h"
+	"Clock.h"
+	"Trap.h"
+
+1653759722 d:\creajeu\cursesprojets\textbird\allmodels.h
+	"Clock.h"
+	"Trap.h"
+
+1653756430 d:\creajeu\cursesprojets\textbird\clock.h
+	<time.h>
+
+1653748364 source:d:\creajeu\cursesprojets\textbird\clock.c
+	"Clock.h"
+
+1653831176 d:\creajeu\cursesprojets\textbird\trap.h
+
+1653831140 source:d:\creajeu\cursesprojets\textbird\trap.c
+	<stdlib.h>
+	<math.h>
+	"Trap.h"
+	"Clock.h"
 

@@ -25,6 +25,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Clock.h" />
+		<Unit filename="Trap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Trap.h" />
+		<Unit filename="allModels.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="allModels.h" />
 		<Unit filename="main_textbird.c">
 			<Option compilerVar="CC" />
 		</Unit>
