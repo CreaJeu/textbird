@@ -20,10 +20,6 @@ struct Trap
 	float __sinNow;
 };
 
-//TODO from model !!
-#define TRAPS_MAX_Y 70
-#define TRAPS_X_SPEED .006
-
 //static public
 struct Trap* s_traps;
 int s_trapsCount;

@@ -6,6 +6,7 @@
 
 #include "allControllers.h"
 #include "allModels.h"
+#include "Bird.h"
 
 
 void allControllersStart()
@@ -25,6 +26,7 @@ void allControllersStart()
 void allControllersUpdate()
 {
 	s_allModelsSkip = 0;//false
+	s_flapNow = 0;
 
 	switch (getch())
 	{
@@ -37,6 +39,9 @@ void allControllersUpdate()
 	case 'P':
 		s_trapRotSpeedScale *= 1.4;
 		s_allModelsSkip = 1;//true, skip
+		break;
+	case ' ':
+		s_flapNow = 1;// true
 		break;
 	case 'q':
 	case 'Q':

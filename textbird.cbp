@@ -25,10 +25,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bird.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bird.h" />
+		<Unit filename="BirdView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BirdView.h" />
 		<Unit filename="Clock.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Clock.h" />
+		<Unit filename="Sprite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sprite.h" />
 		<Unit filename="Trap.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -37,6 +49,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="TrapView.h" />
+		<Unit filename="World.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="World.h" />
 		<Unit filename="allControllers.c">
 			<Option compilerVar="CC" />
 		</Unit>

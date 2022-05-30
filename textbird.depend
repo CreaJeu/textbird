@@ -1,9 +1,7 @@
 # depslib dependency file v1.0
-1653833598 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
-	<stdlib.h>
-	"curses.h"
-	"textRaster.h"
+1653946210 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
 	"allModels.h"
+	"allControllers.h"
 	"allViews.h"
 
 1642212666 d:\creajeu\cursesprojets\pdcurses\curses.h
@@ -18,14 +16,16 @@
 
 1653748082 d:\creajeu\cursesprojets\textraster\linedrawer.h
 
-1653835140 source:d:\creajeu\cursesprojets\textbird\allmodels.c
+1653948696 source:d:\creajeu\cursesprojets\textbird\allmodels.c
 	<stdlib.h>
 	<time.h>
 	"allModels.h"
 	"Clock.h"
+	"World.h"
 	"Trap.h"
+	"Bird.h"
 
-1653834600 d:\creajeu\cursesprojets\textbird\allmodels.h
+1653948366 d:\creajeu\cursesprojets\textbird\allmodels.h
 	"Clock.h"
 	"Trap.h"
 
@@ -35,18 +35,20 @@
 1653748364 source:d:\creajeu\cursesprojets\textbird\clock.c
 	"Clock.h"
 
-1653832488 d:\creajeu\cursesprojets\textbird\trap.h
+1653938132 d:\creajeu\cursesprojets\textbird\trap.h
 
-1653832512 source:d:\creajeu\cursesprojets\textbird\trap.c
+1653941194 source:d:\creajeu\cursesprojets\textbird\trap.c
 	<stdlib.h>
 	<math.h>
 	"Trap.h"
 	"Clock.h"
+	"World.h"
 
-1653835214 source:d:\creajeu\cursesprojets\textbird\allviews.c
+1653948634 source:d:\creajeu\cursesprojets\textbird\allviews.c
 	"allViews.h"
 	"allModels.h"
 	"TrapView.h"
+	"BirdView.h"
 
 1653832658 d:\creajeu\cursesprojets\textbird\allviews.h
 	"Clock.h"
@@ -61,11 +63,43 @@
 1653833804 d:\creajeu\cursesprojets\textbird\trapview.h
 	"textRaster.h"
 
-1653835162 source:d:\creajeu\cursesprojets\textbird\allcontrollers.c
+1653948648 source:d:\creajeu\cursesprojets\textbird\allcontrollers.c
 	<stdlib.h>
 	"curses.h"
 	"allControllers.h"
 	"allModels.h"
+	"Bird.h"
 
 1653835194 d:\creajeu\cursesprojets\textbird\allcontrollers.h
+
+1653937942 d:\creajeu\cursesprojets\textbird\world.h
+
+1653937946 source:d:\creajeu\cursesprojets\textbird\world.c
+	"World.h"
+
+1653948628 source:d:\creajeu\cursesprojets\textbird\bird.c
+	"Bird.h"
+	"Clock.h"
+	"World.h"
+
+1653949800 d:\creajeu\cursesprojets\textbird\bird.h
+
+1653948754 source:d:\creajeu\cursesprojets\textbird\birdview.c
+	<string.h>
+	"curses.h"
+	"allModels.h"
+	"BirdView.h"
+	"Bird.h"
+	"Sprite.h"
+
+1653946434 d:\creajeu\cursesprojets\textbird\birdview.h
+	"Sprite.h"
+
+1653949824 d:\creajeu\cursesprojets\textbird\sprite.h
+	<string.h>
+
+1653947416 source:d:\creajeu\cursesprojets\textbird\sprite.c
+	<stdlib.h>
+	<string.h>
+	"Sprite.h"
 

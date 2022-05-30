@@ -2,9 +2,11 @@
 #include "allViews.h"
 #include "allModels.h"
 #include "TrapView.h"
+#include "BirdView.h"
 
 void allViewsStart()
 {
+	birdViewStart();
 }
 
 void allViewsUpdate()
@@ -14,5 +16,6 @@ void allViewsUpdate()
 		return;
 	}
 	trapsViewUpdate();
+	birdViewUpdate();
 }
 

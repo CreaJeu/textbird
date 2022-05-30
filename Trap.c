@@ -6,6 +6,8 @@
 
 #include "Trap.h"
 #include "Clock.h"
+#include "World.h"
+
 
 
 float range(float min, float max)
@@ -19,6 +21,8 @@ void trapStaticInit()
 {
 	s_trapsCount = 8;
 	s_traps = (struct Trap*)malloc(s_trapsCount * sizeof(struct Trap));
+	//free : don't bother, lifetime = whole game lifetime
+
 	s_trapsCurrentFront = 0;
 
 	s_trapRotSpeedScale = 1;
@@ -28,7 +32,7 @@ void trapStaticInit()
 void __trapStart(struct Trap* t, float x)
 {
 	float maxRadius = 10;
-	t->_centerY = range(1, TRAPS_MAX_Y - maxRadius - 1);
+	t->_centerY = range(1, _worldHeight - maxRadius - 1);
 	t->_centerX = x;
 	t->__radius = range(4, maxRadius);
 	t->__rotSpeed = range(.0002, .002);
@@ -76,7 +80,7 @@ void trapsUpdate()
 	for(i=0; i<s_trapsCount; i++)
 	{
 		struct Trap* t = &(s_traps[i]);
-		t->_centerX -= s_clock._elapsed * TRAPS_X_SPEED;
+		t->_centerX -= s_clock._elapsed * _worldXSpeed;
 		t->__cosBefore = t->__cosNow;
 		t->__sinBefore = t->__sinNow;
 		clock_t deltaTime = s_clock._elapsed;
