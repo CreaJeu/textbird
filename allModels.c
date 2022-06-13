@@ -34,5 +34,9 @@ void allModelsUpdate()
 	}
 	birdUpdate();
 	trapsUpdate();
+	if(s_collision)
+	{
+		s_clock._scale = 0;
+	}
 }
 

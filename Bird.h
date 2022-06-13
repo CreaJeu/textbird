@@ -9,6 +9,8 @@ float s_birdY;
 float s_birdSpeedY;
 float s_birdAccelerationY;
 
+int s_collision;//bool
+
 //for user options
 float s_birdSpeedYScale;
 float s_birdAccelerationYScale;

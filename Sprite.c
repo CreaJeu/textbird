@@ -12,6 +12,10 @@ void spriteStart(struct Sprite* s, wchar_t* textSprite)
 	int currNbChars = 0;
 	int y = 0;
 	int x = 0;
+	int maxX = 0;
+	int maxY = 0;
+	int dX = 0;
+	int dY = 0;
 	for(i=0; i<textLength; i++)
 	{
 		if( (textSprite[i] != L'\n') && (textSprite[i] != L' ') )
@@ -34,8 +38,22 @@ void spriteStart(struct Sprite* s, wchar_t* textSprite)
 			s->_chars[s->_nbChars]._x = x;
 			s->_chars[s->_nbChars]._c = textSprite[i];
 			s->_nbChars++;
+			if(x > maxX)
+			{
+				maxX = x;
+			}
 		}
 		x++;
+	}
+
+	//center x/y on sprite center
+	maxY = s->_chars[s->_nbChars - 1]._y;
+	dX = maxX / 2;
+	dY = maxY / 2;
+	for(i=0; i < s->_nbChars; i++)
+	{
+		s->_chars[i]._y -= dY;
+		s->_chars[i]._x -= dX;
 	}
 
 	s->_y = 0;

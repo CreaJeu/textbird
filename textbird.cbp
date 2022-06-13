@@ -37,6 +37,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Clock.h" />
+		<Unit filename="Intersection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Intersection.h" />
 		<Unit filename="Sprite.c">
 			<Option compilerVar="CC" />
 		</Unit>

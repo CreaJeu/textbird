@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1653946210 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
+1653949596 source:d:\creajeu\cursesprojets\textbird\main_textbird.c
 	"allModels.h"
 	"allControllers.h"
 	"allViews.h"
@@ -16,7 +16,7 @@
 
 1653748082 d:\creajeu\cursesprojets\textraster\linedrawer.h
 
-1653948696 source:d:\creajeu\cursesprojets\textbird\allmodels.c
+1655156254 source:d:\creajeu\cursesprojets\textbird\allmodels.c
 	<stdlib.h>
 	<time.h>
 	"allModels.h"
@@ -29,20 +29,22 @@
 	"Clock.h"
 	"Trap.h"
 
-1653756430 d:\creajeu\cursesprojets\textbird\clock.h
+1655156262 d:\creajeu\cursesprojets\textbird\clock.h
 	<time.h>
 
-1653748364 source:d:\creajeu\cursesprojets\textbird\clock.c
+1655156212 source:d:\creajeu\cursesprojets\textbird\clock.c
 	"Clock.h"
 
 1653938132 d:\creajeu\cursesprojets\textbird\trap.h
 
-1653941194 source:d:\creajeu\cursesprojets\textbird\trap.c
+1655156660 source:d:\creajeu\cursesprojets\textbird\trap.c
 	<stdlib.h>
 	<math.h>
 	"Trap.h"
 	"Clock.h"
 	"World.h"
+	"Bird.h"
+	"Intersection.h"
 
 1653948634 source:d:\creajeu\cursesprojets\textbird\allviews.c
 	"allViews.h"
@@ -54,7 +56,7 @@
 	"Clock.h"
 	"Trap.h"
 
-1653833644 source:d:\creajeu\cursesprojets\textbird\trapview.c
+1655155694 source:d:\creajeu\cursesprojets\textbird\trapview.c
 	"curses.h"
 	"allModels.h"
 	"TrapView.h"
@@ -77,14 +79,14 @@
 1653937946 source:d:\creajeu\cursesprojets\textbird\world.c
 	"World.h"
 
-1653948628 source:d:\creajeu\cursesprojets\textbird\bird.c
+1655155308 source:d:\creajeu\cursesprojets\textbird\bird.c
 	"Bird.h"
 	"Clock.h"
 	"World.h"
 
-1653949800 d:\creajeu\cursesprojets\textbird\bird.h
+1655156026 d:\creajeu\cursesprojets\textbird\bird.h
 
-1653948754 source:d:\creajeu\cursesprojets\textbird\birdview.c
+1655156344 source:d:\creajeu\cursesprojets\textbird\birdview.c
 	<string.h>
 	"curses.h"
 	"allModels.h"
@@ -92,14 +94,19 @@
 	"Bird.h"
 	"Sprite.h"
 
-1653946434 d:\creajeu\cursesprojets\textbird\birdview.h
+1654286512 d:\creajeu\cursesprojets\textbird\birdview.h
 	"Sprite.h"
 
 1653949824 d:\creajeu\cursesprojets\textbird\sprite.h
 	<string.h>
 
-1653947416 source:d:\creajeu\cursesprojets\textbird\sprite.c
+1655154968 source:d:\creajeu\cursesprojets\textbird\sprite.c
 	<stdlib.h>
 	<string.h>
 	"Sprite.h"
+
+1654553604 source:d:\creajeu\cursesprojets\textbird\intersection.c
+	"Intersection.h"
+
+1654552252 d:\creajeu\cursesprojets\textbird\intersection.h
 

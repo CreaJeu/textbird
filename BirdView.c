@@ -18,6 +18,12 @@ void birdViewStart()
 	txt = L" __\n/  \\";
 	spriteStart(&s__birdSpriteFlap, txt);
 	s__birdSpriteFlap._x = s_birdX;
+
+//	\/\/
+//	/\/\.
+	txt = L"\\/\\/\n/\\/\\";
+	spriteStart(&s__birdSpriteDead, txt);
+	s__birdSpriteDead._x = s_birdX;
 }
 
 void __drawSprite(struct Sprite* s)
@@ -33,7 +39,11 @@ void __drawSprite(struct Sprite* s)
 void birdViewUpdate()
 {
 	struct Sprite* currSprite;
-	if(s_flapNow)
+	if(s_collision)
+	{
+		currSprite = &s__birdSpriteDead;
+	}
+	else if(s_birdSpeedY < -.022)
 	{
 		currSprite = &s__birdSpriteFlap;
 	}

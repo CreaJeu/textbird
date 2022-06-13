@@ -7,7 +7,8 @@
 #include "Trap.h"
 #include "Clock.h"
 #include "World.h"
-
+#include "Bird.h"
+#include "Intersection.h"
 
 
 float range(float min, float max)
@@ -31,10 +32,10 @@ void trapStaticInit()
 
 void __trapStart(struct Trap* t, float x)
 {
-	float maxRadius = 10;
+	float maxRadius = 14;
 	t->_centerY = range(1, _worldHeight - maxRadius - 1);
 	t->_centerX = x;
-	t->__radius = range(4, maxRadius);
+	t->__radius = range(6, maxRadius);
 	t->__rotSpeed = range(.0002, .002);
 
 	float angle = range(0, 6.3);
@@ -70,15 +71,17 @@ void __trapsTurnover()
 
 void trapsUpdate()
 {
-	int i;//for "for loop"
+	int i,j;//for "for loop"
 
-	if(s_traps[s_trapsCurrentFront]._centerX <= .5)
+	if(s_traps[s_trapsCurrentFront]._centerX <= -4)
 	{
 		__trapsTurnover();
 	}
 
-	for(i=0; i<s_trapsCount; i++)
+	for(j=0; j<s_trapsCount; j++)
 	{
+		i = (j + s_trapsCurrentFront) % s_trapsCount;
+
 		struct Trap* t = &(s_traps[i]);
 		t->_centerX -= s_clock._elapsed * _worldXSpeed;
 		t->__cosBefore = t->__cosNow;
@@ -97,6 +100,14 @@ void trapsUpdate()
 
 		t->_endY = t->_centerY + (t->__radius * t->__sinNow);
 		t->_endX = t->_centerX + (t->__radius * t->__cosNow);
+
+		//collision test
+		if((i < 4) && (!s_collision))
+		{
+			s_collision = intersectSegBox(t->_centerX, t->_centerY, t->_endX, t->_endY,
+										s_birdX-2, s_birdY - 1 - (s_birdSpeedY * s_clock._elapsed),
+										s_birdX+2, s_birdY+1);
+		}
 	}
 }
 

@@ -7,6 +7,7 @@ struct Clock
 {
 	//public output
 	clock_t _elapsed;
+	float _scale;
 
 	//private
 	clock_t __now;
