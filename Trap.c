@@ -104,9 +104,19 @@ void trapsUpdate()
 		//collision test
 		if((i < 4) && (!s_collision))
 		{
+			float minY = s_birdY - 1;
+			float maxY = s_birdY + 1;
+			//avoid passing through walls when speed is high
+			if(s_birdSpeedY < 0)
+			{
+				maxY -= (s_birdSpeedY * s_clock._elapsed);
+			}
+			else
+			{
+				minY -= (s_birdSpeedY * s_clock._elapsed);
+			}
 			s_collision = intersectSegBox(t->_centerX, t->_centerY, t->_endX, t->_endY,
-										s_birdX-2, s_birdY - 1 - (s_birdSpeedY * s_clock._elapsed),
-										s_birdX+2, s_birdY+1);
+										s_birdX-2, minY, s_birdX+2, maxY);
 		}
 	}
 }
