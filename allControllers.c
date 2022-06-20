@@ -41,7 +41,14 @@ void allControllersUpdate()
 		s_allModelsSkip = 1;//true, skip
 		break;
 	case ' ':
-		s_flapNow = 1;// true
+		if(s_collision)
+		{
+			s_allModelsRestart = 1;
+		}
+		else
+		{
+			s_flapNow = 1;// true
+		}
 		break;
 	case 'q':
 	case 'Q':

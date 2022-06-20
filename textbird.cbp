@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DPDC_WIDE" />
 					<Add directory="../PDCurses" />
 					<Add directory="../textraster" />
 				</Compiler>
@@ -37,6 +38,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Clock.h" />
+		<Unit filename="GameOverView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="GameOverView.h" />
 		<Unit filename="Intersection.c">
 			<Option compilerVar="CC" />
 		</Unit>

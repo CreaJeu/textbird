@@ -3,6 +3,7 @@
 #include "allModels.h"
 #include "TrapView.h"
 #include "BirdView.h"
+#include "GameOverView.h"
 
 void allViewsStart()
 {
@@ -17,5 +18,6 @@ void allViewsUpdate()
 	}
 	trapsViewUpdate();
 	birdViewUpdate();
+	gameOverViewUpdate();
 }
 

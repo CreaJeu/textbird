@@ -16,7 +16,7 @@
 
 1653748082 d:\creajeu\cursesprojets\textraster\linedrawer.h
 
-1655156254 source:d:\creajeu\cursesprojets\textbird\allmodels.c
+1655757348 source:d:\creajeu\cursesprojets\textbird\allmodels.c
 	<stdlib.h>
 	<time.h>
 	"allModels.h"
@@ -25,7 +25,7 @@
 	"Trap.h"
 	"Bird.h"
 
-1653948366 d:\creajeu\cursesprojets\textbird\allmodels.h
+1655756658 d:\creajeu\cursesprojets\textbird\allmodels.h
 	"Clock.h"
 	"Trap.h"
 
@@ -35,9 +35,9 @@
 1655156212 source:d:\creajeu\cursesprojets\textbird\clock.c
 	"Clock.h"
 
-1653938132 d:\creajeu\cursesprojets\textbird\trap.h
+1655758064 d:\creajeu\cursesprojets\textbird\trap.h
 
-1655156660 source:d:\creajeu\cursesprojets\textbird\trap.c
+1655763046 source:d:\creajeu\cursesprojets\textbird\trap.c
 	<stdlib.h>
 	<math.h>
 	"Trap.h"
@@ -46,11 +46,12 @@
 	"Bird.h"
 	"Intersection.h"
 
-1653948634 source:d:\creajeu\cursesprojets\textbird\allviews.c
+1655754024 source:d:\creajeu\cursesprojets\textbird\allviews.c
 	"allViews.h"
 	"allModels.h"
 	"TrapView.h"
 	"BirdView.h"
+	"GameOverView.h"
 
 1653832658 d:\creajeu\cursesprojets\textbird\allviews.h
 	"Clock.h"
@@ -65,7 +66,7 @@
 1653833804 d:\creajeu\cursesprojets\textbird\trapview.h
 	"textRaster.h"
 
-1653948648 source:d:\creajeu\cursesprojets\textbird\allcontrollers.c
+1655756782 source:d:\creajeu\cursesprojets\textbird\allcontrollers.c
 	<stdlib.h>
 	"curses.h"
 	"allControllers.h"
@@ -79,7 +80,7 @@
 1655156904 source:d:\creajeu\cursesprojets\textbird\world.c
 	"World.h"
 
-1655155308 source:d:\creajeu\cursesprojets\textbird\bird.c
+1655763186 source:d:\creajeu\cursesprojets\textbird\bird.c
 	"Bird.h"
 	"Clock.h"
 	"World.h"
@@ -109,4 +110,12 @@
 	"Intersection.h"
 
 1654552252 d:\creajeu\cursesprojets\textbird\intersection.h
+
+1655757728 d:\creajeu\cursesprojets\textbird\gameoverview.h
+
+1655755478 source:d:\creajeu\cursesprojets\textbird\gameoverview.c
+	<string.h>
+	"curses.h"
+	"Bird.h"
+	"World.h"
 
